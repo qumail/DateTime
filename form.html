@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="time"></div>
+   
+   <button onclick="showTime()">Show Time</button>
+</body>
+</html>
+
+<script type="text/javascript">
+
+	// alert()
+	// prompt()
+	// document
+	// console
+	// confirm()
+
+	  r=confirm("do u really want to submit this form");
+	   
+	   if(r==1){
+	   	alert("submit this form");
+	   }
+	   else {
+	   	alert("not submitted");
+	   }
+
+	// dt =new Date();
+	// alert(dt);
+	// h=dt.getHours();
+	// alert(h);
+	
+	// m= dt.getMinutes();
+ //    alert(m);
+
+ //    s=dt.getSeconds();
+ //    alert(s);
+
+   dt=new Date();
+   y=dt.getFullYear();
+   alert(y);
+
+   m =dt.getMonth();
+   alert(m+1);
+
+   d=dt.getDay();
+   alert(d);
+
+ function showTime() {
+ 	 dt =new Date();
+	h=dt.getHours();
+	m= dt.getMinutes();
+    s=dt.getSeconds();
+    document.getElementById('time').innerText=h + ":"+ m +":" +s;
+  
+
+ }
+</script>
+
+
+<style type="text/css">
+	#time {
+		background-color: black;
+		color: white;
+		padding: 30px;
+		font-size: 20px;
+		width: 200px;
+	}
+</style>
